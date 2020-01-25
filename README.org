@@ -1,11 +1,11 @@
 * Sping 2020 - 136 - Project 0
 
-* Last name:
+* Last name: Gupta
 
-* First name:
+* First name: Shafali
 
 
-* GitHub username:
+* GitHub username: shafali731
 
 * Notes:
 
@@ -30,4 +30,3 @@ semester, you must submit you base code before class on
 Monday. *HOWEVER* since you didn't know you'd need a Makefile or
 doctest based tests you can update your project to include those up
 until the start of Thursday's class.
-
