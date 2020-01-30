@@ -15,25 +15,27 @@ things like a[10] = 123 or x = a[3] + a[5].
 
 4. The vector should grow or be able to grow as needed.
 */
+#include "funcs.h"
 
 #include <iostream>
+#include <string>
 
-template <class T>
-class myVector {
-public:
-  myVector();
-  // myVector(int a);
-  int get_num();
-  T& operator[](int i);
-  void add(T a);
-  // int get_l();
-private:
-  T* my_arr;
-  int size;
-  int leng;
-  void resize();
-
-};
+// template <class T>
+// class myVector {
+// public:
+//   myVector();
+//   // myVector(int a);
+//   int get_num();
+//   T& operator[](int i);
+//   void add(T a);
+//   // int get_l();
+// private:
+//   T* my_arr;
+//   int size;
+//   int leng;
+//   void resize();
+//
+// };
 template <typename T>
 myVector<T>::myVector(){
   my_arr = new T[3];
@@ -73,28 +75,28 @@ void myVector<T>::add(T a){
 // int myVector<T>::get_l(){
 //   return leng;
 // }
-int main(){
-  myVector<int> a;
-  std::cout << a.get_num() << '\n'; //0
-  a.add(6);
-  std::cout << a.get_num() << '\n'; //1
-  std::cout << a[0] << '\n'; //3
-  a[1] = 5;
-  std::cout << a[1] << '\n';
-  std::cout << a.get_num() << '\n';
-  std::cout << "/* message */" << '\n';
-  a[2] = 4;
-  std::cout << a[2] << '\n';
-  std::cout << a.get_num() << '\n';
-  // std::cout << a.get_l() << '\n';
-  a.add(3);
-  std::cout << a[3] << '\n';
-  std::cout << a.get_num() << '\n';
-  // std::cout << a.get_l() << '\n';
-
-  a.add(2);
-  std::cout << a[4] << '\n';
-  std::cout << a.get_num() << '\n';
-  // std::cout << a.get_l() << '\n';
-  return 0;
-}
+// int main(){
+//   myVector<int> a;
+//   std::cout << a.get_num() << '\n'; //0
+//   a.add(6);
+//   std::cout << a.get_num() << '\n'; //1
+//   std::cout << a[0] << '\n'; //3
+//   a[1] = 5;
+//   std::cout << a[1] << '\n';
+//   std::cout << a.get_num() << '\n';
+//   std::cout << "/* message */" << '\n';
+//   a[2] = 4;
+//   std::cout << a[2] << '\n';
+//   std::cout << a.get_num() << '\n';
+//   // std::cout << a.get_l() << '\n';
+//   a.add(3);
+//   std::cout << a[3] << '\n';
+//   std::cout << a.get_num() << '\n';
+//   // std::cout << a.get_l() << '\n';
+//
+//   a.add(2);
+//   std::cout << a[4] << '\n';
+//   std::cout << a.get_num() << '\n';
+//   // std::cout << a.get_l() << '\n';
+//   return 0;
+// }
